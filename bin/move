@@ -8,10 +8,10 @@ puts "Welcome to Tic Tac Toe!"
 board = [" "," "," "," "," "," "," "," "," "]
 puts "Where would you like to go?"
 number =gets.strip
-def input_to_index
+def input_to_index(number)
   index = number - 1
 end
-
+input_to_index(number)
 def move(board, index, value="X")
   board(index)=value
 end
